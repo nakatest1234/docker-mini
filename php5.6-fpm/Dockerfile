@@ -32,7 +32,6 @@ RUN docker-php-ext-install -j$(nproc) \
         mbstring \
         mysql \
         pdo_mysql \
-        opcache \
         mcrypt \
         bcmath \
         opcache \
