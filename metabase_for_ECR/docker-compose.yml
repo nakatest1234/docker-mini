@@ -1,0 +1,14 @@
+version: '3'
+services:
+  metabase:
+    container_name: metabase
+    image: metabase/metabase:latest
+    environment:
+      - MB_DB_TYPE=mysql
+      - MB_DB_DBNAME=metabase
+      - MB_DB_PORT=3306
+      - MB_DB_USER=
+      - MB_DB_PASS=
+      - MB_DB_HOST=hoge.hage.ap-northeast-1.rds.amazonaws.com
+    ports:
+      - "80:3000"
